@@ -1,0 +1,32 @@
+{
+  "name": "proyecto_prl",
+  "version": "1.0.0",
+  "description": "APP-PRL",
+  "homepage": "https://github.com/Karely2003/Proyecto_PRL#readme",
+  "bugs": {
+    "url": "https://github.com/Karely2003/Proyecto_PRL/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karely2003/Proyecto_PRL.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.2",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.4"
+  }
+}
