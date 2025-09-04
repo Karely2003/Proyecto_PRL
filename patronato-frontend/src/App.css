@@ -1,0 +1,23 @@
+/* App.css */
+
+/* Enlaces sin subrayado */
+a {
+  text-decoration: none;
+}
+
+/* Formulario registro y login */
+form input {
+  width: 100%;
+}
+
+/* Ajustes generales de margen */
+.page p {
+  margin-bottom: 1.5rem;
+}
+
+/* Dashboard botones clicables */
+.card-dashboard {
+  cursor: pointer;
+}
+
+/* Navbar sombra y hover ya definidos en index.css */

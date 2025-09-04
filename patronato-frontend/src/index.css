@@ -1,0 +1,144 @@
+/* index.css */
+
+/* Importar fuente y Bootstrap */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* Variables de colores */
+:root {
+  --primary-color: #3b81c3;      /* Azul principal */
+  --secondary-color: #91bea6;    /* Azul claro */
+  --accent-color: #ffc107;       /* Amarillo dorado */
+  --text-dark: #212529;          /* Texto oscuro */
+}
+
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Fondo semitransparente con blur */
+body {
+  background: rgba(98, 192, 103, 0.05);
+  backdrop-filter: blur(5px);
+  min-height: 100vh;
+  color: var(--text-dark);
+}
+
+/* Centrado general para páginas */
+.page, .form-container {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: 3rem auto;
+  text-align: center;
+}
+
+/* Títulos */
+.page h2, .form-title {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+/* Formularios */
+.form-control {
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  transition: all 0.3s;
+}
+
+.form-control:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 6px rgba(31, 139, 135, 0.5);
+  outline: none;
+}
+
+/* Botones */
+.btn-custom {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.btn-custom:hover {
+  background: var(--accent-color);
+  color: #000;
+  transform: scale(1.05);
+  font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+  background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #fff !important;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #fff !important;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+/* Dashboard: tarjetas */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.card-dashboard {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-dashboard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.card-dashboard i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Ajustes responsive menores */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .card-dashboard {
+    margin-bottom: 1rem;
+  }
+}
