@@ -1,0 +1,40 @@
+{
+  "name": "proyecto-prl",
+  "version": "1.0.0",
+  "description": "App-PRL - Sistema de gestión para Patronato Robles de la Laguna",
+  "homepage": "https://github.com/Karely2003/Proyecto_PRL#readme",
+  "bugs": {
+    "url": "https://github.com/Karely2003/Proyecto_PRL/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Karely2003/Proyecto_PRL.git"
+  },
+  "license": "ISC",
+  "author": "Karely2003",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/node": "^24.3.0",
+    "colors": "^1.4.0",
+    "lucide-react": "^0.542.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.30.1"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.2",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^4.7.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.4"
+  }
+}
